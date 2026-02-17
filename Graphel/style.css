@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.contenedor {
+    width: 90%; 
+    margin: auto;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.boton-rojo {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding: 0 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 5px;
+    border-bottom: #00bcd4 4px solid;
+}
+
+header .contenedor-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+header .logo {
+    color: #f0f4f5;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 10px; 
+    margin-left: 0; 
+}
+
+header .logo strong {color: #00bcd4;}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+.menu-toggle {
+    display: block; 
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000; 
+}
+
+.menu-toggle .linea {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    top: 50px; 
+    left: 0;
+    background: #35424a;
+    z-index: 999;
+    border-top: 1px solid #444;
+}
+
+.main-menu.is-open {
+    max-height: 500px;
+}
+
+.main-menu ul {
+    list-style: none;
+    flex-direction: column; 
+    padding: 0;
+}
+.main-menu li {
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid #444;
+}
+.main-menu li a {
+    display: block;
+    padding: 15px 20px;
+    text-align: right;
+    color: #ffffff;
+}
+.main-menu li.current a {
+    background: #e8491d;
+    color: #ffffff;
+}
+
+.menu-toggle.is-active .linea:nth-child(2) { opacity: 0; }
+.menu-toggle.is-active .linea:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.menu-toggle.is-active .linea:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+
+#banner {
+    min-height: 250px; 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+#banner .contenido-banner {
+    position: relative; 
+    z-index: 10;
+}
+
+#banner h2 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+#banner p {
+    font-size: 16px;
+}
+
+
+#suscripcion {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px 10px;
+}
+
+#suscripcion .contenedor {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
+}
+
+#suscripcion p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#suscripcion form {
+    display: flex;
+    width: 100%;
+}
+
+#suscripcion input[type="email"] {
+    padding: 10px;
+    height: 38px;
+    flex: 1; 
+    border: none;
+    margin-right: 5px;
+}
+
+#destacados {
+    padding: 20px 0;
+    text-align: center;
+}
+
+#destacados .contenedor {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+#destacados .caja {
+    padding: 10px;
+}
+
+#destacados .caja img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+#destacados .caja h3 {
+    margin-bottom: 10px;
+    color: #35424a;
+}
+
+#contenido-principal {
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+}
+
+#main-content {
+    order: 1; 
+    flex: 1; 
+}
+
+#sidebar {
+    order: 2; 
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    min-height: auto;
+    margin: 0; 
+    height: auto;
+}
+
+#sidebar-a {
+    order: 2; 
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px;
+    min-height: auto;
+    flex: 1;
+    margin: 0;
+    min-height: 250px;
+}
+
+#sidebar h4, #sidebar-a h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+#main-content .parrafo-oscuro {
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+#main-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.servicio-caja {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.formulario-contacto textarea {
+    min-height: 100px;
+}
+
+.formulario-contacto .boton-rojo {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.map-placeholder {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.map-placeholder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #00bcd4;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (min-width: 769px) {
+    
+    .contenedor {
+        width: 80%; 
+        padding: 0;
+    }
+    
+    .menu-toggle {
+        display: none; 
+    }
+    
+    header .logo {
+        margin-left: 0; 
+    }
+
+    .main-menu {
+        display: block; 
+        max-height: none;
+        position: static; 
+        width: auto;
+        border-top: none;
+    }
+    
+    .main-menu ul {
+        flex-direction: row; 
+        display: flex;
+    }
+    .main-menu li {
+        border-bottom: none;
+        padding: 0 15px;
+        width: auto;
+    }
+    
+    #banner {
+        min-height: 400px;
+    }
+    #banner h2 {
+        font-size: 50px;
+    }
+    
+    #suscripcion .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    #suscripcion form {
+        width: 40%;
+        min-width: 350px;
+    }
+    
+    .boton-rojo {
+        width: auto; 
+    }
+    
+    #destacados .contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    #contenido-principal {
+        flex-direction: row;
+        width: 80%; 
+        margin: 0 auto;
+    }
+    #main-content {
+        flex: 2; 
+        order: 1;
+        padding-right: 30px;
+    }
+    #sidebar {
+        flex: 1;
+        order: 2;
+        min-height: 250px;
+        margin: 0;
+    }
+    
+    #sidebar-a {
+        flex: 1; 
+        order: 2;
+        min-height: 250px;
+        margin: 0;
+    }
+    .formulario-contacto form {
+        max-width: 400px;
+    }
+}

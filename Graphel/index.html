@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Multimedia - Expertos en Tecnologías Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-superior">
+            <h1 class="logo">Diseño Multimedia</h1>
+            
+            <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </button>
+            
+            <nav class="main-menu" id="main-menu">
+                <ul>
+                    <li class="current"><a href="index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="servicios.html">SERVICIOS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner" style="background-image: url(./imagenes/cabecera.jpg);">
+        <div class="contenido-banner">
+            <h2>Expertos en Tecnologías Web</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima beatae aspernatur alias, commodi molestiae accusantium.</p>
+        </div>
+    </section>
+
+    <section id="suscripcion">
+        <div class="contenedor">
+            <p>Suscríbete a nuestro boletín</p>
+            <form action="#">
+                <input type="email" placeholder="Ingrese el Email..." required>
+                <button type="submit" class="boton-rojo">Suscribirse</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="destacados">
+        <div class="contenedor">
+            <div class="caja">
+                <img src=".//imagenes/logo_html.png" alt="HTML5 Logo">
+                <h3>HTML5</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+            <div class="caja">
+                <img src=".//imagenes/logo_css.png" alt="CSS3 Logo">
+                <h3>CSS3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+            <div class="caja">
+                <img src=".//imagenes/logo_brush.png" alt="Diseño Gráfico Icono">
+                <h3>Diseño Gráfico</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Graphel Desarrollo Web, Copyright © 2017</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainMenu = document.querySelector('.main-menu');
+            
+            menuToggle.addEventListener('click', function() {
+                mainMenu.classList.toggle('is-open'); 
+                menuToggle.classList.toggle('is-active'); 
+                
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true' || false;
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+            });
+        });
+    </script>
+
+</body>
+</html>

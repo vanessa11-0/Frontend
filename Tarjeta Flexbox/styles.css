@@ -1,0 +1,62 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A67437;
+}
+
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 350px;
+    background-color: #590202;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.tarjeta-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.tarjeta-titulo {
+    color: #DCE6E3;
+    margin: 0;
+}
+
+.tarjeta-descripcion {
+    color: #DCE6E3;
+    font-size: 1em;
+    margin: 0;
+    
+}
+
+.tarjeta-boton {
+    background-color: #BF8C6F;
+    color: #590202;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.tarjeta-boton:hover {
+    background-color: #DCE6E3;
+}

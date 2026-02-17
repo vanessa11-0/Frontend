@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f5; 
+}
+
+body {
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: white;
+    margin: 20px 20px 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #fafafa; 
+    padding: 25px 20px;
+    border-right: 1px solid #eee;
+    border-top-left-radius: 8px; 
+    border-bottom-left-radius: 8px; 
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 8px 0;
+    color: #555;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.content {
+    padding: 25px;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.proyectos-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.tarjeta {
+    flex: 1 1 300px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    min-width: 0; 
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.tarjeta p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+}

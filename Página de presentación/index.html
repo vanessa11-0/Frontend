@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de presentación</title>
+        <link rel="icon"  href="./image/icono.png">
+    </head>
+    <body>
+        <header>
+            <h1>Vanessa Triviño</h1>
+            <nav>
+                <p>
+                    <a href="#perfil">Mi Perfil</a>
+                    <a href="https://www.google.com" target="_blank">Ir a Google</a> |
+                    <a href="https://github.com/vanessa11-0">Enlace Externo</a>
+                </p>
+            </nav>
+        </header>
+
+        <main>
+            <section id="perfil">
+                <h2>Información Personal</h2>
+
+                <p>
+                    Hola, soy Vanessa y tengo <u>20 años</u>. Me considero una
+                    persona apasionada por la música, el mundo animal y la
+                    belleza de la <mark>naturaleza</mark>. Actualmente, estoy
+                    enfocada en mis estudios con el objetivo de convertirme en
+                    la mejor programadora, buscando siempre la
+                    <small>autosuficiencia</small> para conseguir mis metas por
+                    cuenta propia..
+                </p>
+
+                <h3>Multimedia</h3>
+
+                <img src="./image/murcielago.jpg" height="300px" alt>
+
+                <hr>
+                <br>
+                <h3>Audio</h3>
+                <audio controls>
+                    <source
+                        src="./audio/米津玄師, 宇多田ヒカル Kenshi Yonezu, Hikaru Utada -  JANE DOE.mp3"
+                        type="audio">
+
+                </audio>
+                <hr>
+                <br>
+                <h3>Video</h3>
+                <video
+                    src="./video/米津玄師, 宇多田ヒカル Kenshi Yonezu, Hikaru Utada -  JANE DOE - Kenshi Yonezu  米津玄師 (1080p, h264).mp4"
+                    height="400px" controls></video>
+
+            </section>
+            <hr>
+            <section>
+                <h2>Listas</h2>
+                <h3>Metas (Lista Ordenada)</h3>
+                <ol>
+                    <li>Ser programadora full-stack.</li>
+                    <li>Conocer nuevos lugares.</li>
+                    <li>Crear o financiar una fundación para animales sin
+                        hogar.</li>
+                </ol>
+                <hr>
+                <h3>Intereses (Lista No Ordenada)</h3>
+                <ul>
+                    <li>Lectura.</li>
+                    <li>Peliculas.</li>
+                    <li>Música.</li>
+                </ul>
+                <hr>
+
+                <h3>Conocimientos (Lista Anidada)</h3>
+                <ul>
+                    <li>Maquillaje
+                        <ul>
+                            <li>Maquillaje Artístico</li>
+                            <li>Delineados Gráficos</li>
+                            <li>Maquillaje Editorial</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <li>Instrumentos músicales
+                        <ul>
+                            <li>Guitarra electrica</li>
+                            <li>Guitarra acústica</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Tabla de series y peliculas favoritas </h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Series</th>
+                            <th>Peliculas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juego de Tronos</td>
+                            <td>Yo antes de ti</td>
+                        </tr>
+                        <tr>
+                            <td>Breaking Bad</td>
+                            <td>El silencio de los inocentes</td>
+                        </tr>
+                        <tr>
+                            <td>The Boys</td>
+                            <td>El cadáver de la novia</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </section>
+            <hr>
+            <aside>
+                <section id="contacto">
+                    <h2>Formulario de Contacto</h2>
+                    <form action="#" method="post">
+                        <p>
+                            <label for="nombre">Nombre Completo:</label>
+                            <input type="text" id="nombre" name="nombre"
+                                required>
+                        </p>
+                        <p>
+                            <label for="email">Correo Electrónico:</label>
+                            <input type="email" id="email" name="email"
+                                required>
+                        </p>
+                        <p>
+                            <label for="mensaje">Mensaje:</label><br>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                cols="25" required></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Enviar">
+                        </p>
+                    </form>
+                </section>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Derechos de autor &copy; 2025 Vanessa Triviño.</p>
+        </footer>
+
+    </body>
+</html>
