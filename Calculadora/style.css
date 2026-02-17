@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3f3a3a;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #f793b4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.display {
+    grid-column: 1 / -1;
+    background: rgb(116, 114, 114);
+    color: #D3D3D3;
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: right;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #c9c9c9;
+}
+
+/* Animación de pulsación */
+button:active { 
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+
+.btn-clear {
+    background: #D3D3D3;
+    color: #000;
+}
+
+.btn-equal {
+    background: #D3D3D3;
+    color: #000;
+}

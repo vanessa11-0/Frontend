@@ -1,0 +1,47 @@
+main { /* Define los estilos del contenedor principal */
+    height: 100vh; /* Define la altura del contenedor principal */
+    width: 100vw; /* Define la anchura del contenedor principal */
+    position: relative;
+    display: flex; /* Define el contenedor principal como un flex container */
+    align-items: center; /* Centra los elementos del contenedor principal */
+    gap: 1rem; /* Define el espacio entre los elementos del contenedor principal */
+    justify-content: center; /* Centra los elementos del contenedor principal */
+    flex-direction: column; /* Define la dirección de los elementos del contenedor principal */
+}
+
+.counter-row { /* Define los estilos del contenedor de los botones y el contador */
+    display: flex; /* Define el contenedor de los botones y el contador como un flex container */
+    justify-content: center; /* Centra los elementos del contenedor de los botones y el contador */
+    align-items: center; /* Centra los elementos del contenedor de los botones y el contador */ 
+    gap: 2rem; /* Define el espacio entre los elementos del contenedor de los botones y el contador */
+}
+
+    span { /* Define los estilos del span */
+    font-size: 2rem; /* Define el tamaño de la fuente del span */
+}
+
+button { /* Define los estilos del botón */
+    font-size: 1.2rem; /* Define el tamaño de la fuente del botón */
+    padding: 0.7rem 1.2rem; /* Define el padding del botón */
+    border-radius: 8px; /* Define el radio de la esquina del botón */
+    outline: none; /* Define el outline del botón */
+    border: none; /* Define el borde del botón */
+    transition: all 0.3s ease; /* Define la transición del botón */
+    cursor: pointer; /* Define el cursor del botón */
+}
+
+button:hover { /* Define los estilos del botón cuando se pasa el cursor sobre él */
+    transform: scale(1.1);
+}
+
+.increment {
+    background-color: #f53283; /* Define el color de fondo del botón de incremento */   
+}
+
+.decrement {
+    background-color: rgb(21, 227, 200); /* Define el color de fondo del botón de decremento */
+}
+
+.clear {
+    background-color: rgb(47, 247, 21); /* Define el color de fondo del botón de limpiar */
+}
