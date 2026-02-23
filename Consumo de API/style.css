@@ -28,6 +28,23 @@ header p {
     margin-top: 10px;
 }
 
+#fetch-btn {
+    padding: 12px 24px;
+    background-color: #2d3436;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#fetch-btn:hover {
+    background-color: #00b894; 
+}
+
 #container-character {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
