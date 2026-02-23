@@ -31,7 +31,7 @@ function renderCards(characters) {  // Recibe un array de personajes
                 <h3>${character.name}</h3>
                 <span class="location-label">Última ubicación:</span>
                 <p class="location-name">${character.location.name}</p>
-            </div>  // Cerrar card-info
+            </div>  
         `;  
         // Agregar el cuadro al contenedor
         container.appendChild(card);
