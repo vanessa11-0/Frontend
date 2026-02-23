@@ -7,14 +7,14 @@ const addBtn = document.getElementById('addBtn');
 const notesContainer = document.getElementById('notesContainer');
 
 addBtn.addEventListener('click', () => {
-    const title = titleInput.value;
+    const title = titleInput.value; //obtiene el valor del título y el contenido ingresados por el usuario
     const content = contentInput.value;
 
-    if (title.trim() && content.trim()) {
+    if (title.trim() && content.trim()) {   //
         const newNote = {       //crea un nuevo objeto nota con un id único basado en el tiempo actual
             id: Date.now(),        //asigna un id único basado en el tiempo actual
             title: title,       //asigna el título y el contenido ingresados por el usuario
-            content: content,   //
+            content: content,   //inicialmente, la nota no es importante
             important: false
         };
         notes.push(newNote);    //agrega la nueva nota al arreglo

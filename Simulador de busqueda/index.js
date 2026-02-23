@@ -21,7 +21,7 @@ function findUserById(id) {
     });
 }
 
-const inputField = document.getElementById('userIdInput'); 
+const inputField = document.getElementById('userIdInput');  
 const searchBtn = document.getElementById('btnSearch');
 const display = document.getElementById('displayArea');
 

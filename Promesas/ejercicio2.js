@@ -34,6 +34,7 @@ obtenerNumero()
 //      .then((num) => {
 //        multiplicarPorDos(num);   //imprime undefined porque no se está retornando el resultado
 //   })                             //faltó retornar dentro del .then de multiplicarPorDos
-//       .then((resultado) => {
+//       .then((resultado) => {     //imprime el resultado correcto porque se retornó el 
+// resultado de multiplicarPorDos
 //         console.log(resultado);
 //  });
