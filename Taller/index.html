@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task App </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="app">
+            <h1>Task App</h1>
+
+            <form id="task-form">
+                <input id="task-input" type="text" placeholder="Nueva tarea..." required />
+                <button type="submit">Agregar</button>
+            </form>
+
+            <button id="load-api">Cargar tareas desde API</button>
+
+            <ul id="task-list"></ul>
+        </div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

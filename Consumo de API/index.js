@@ -28,7 +28,7 @@ async function fetchCharacters() {
         btn.innerText = "Reintentar consulta";
     } finally {
         // finally se ejecuta siempre, haya error o no, para reactivar el botón
-        btn.disabled = false;
+        btn.disabled = false; // Reactivar el botón después de la consulta
     }
 }
 
