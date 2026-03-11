@@ -13,7 +13,7 @@ function multiplicarPorDos(numero) {
     return new Promise((resolve) => {
     setTimeout(() => {
         const resultado = numero * 2;
-        console.log("Número multiplicado por 2: " + resultado);
+        console.log("Número multiplicado por 2: " + resultado);0
         resolve(resultado);
     }, 2000);
 });
