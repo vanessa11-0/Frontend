@@ -1,0 +1,109 @@
+$borde-negro: #2d2d2d;
+$rosa-principal: #ffb7c5;
+$rosa-fuerte: #ff8fa3;
+$rosa-claro: #ffcfd2;
+$blanco-puro: #ffffff;
+$hover-color: #fefae0; 
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff0f3;
+    margin: 0;
+}
+
+.container {
+    width: 320px;
+    background: $rosa-principal;
+    padding: 25px;
+    border: 4px solid $borde-negro;
+    border-radius: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto repeat(4, 65px);
+    gap: 12px;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+    grid-column: 1 / -1;
+    background: $blanco-puro;
+    border: 4px solid $borde-negro;
+    border-radius: 20px;
+    height: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: $borde-negro;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+}
+
+button {
+    width: 100%;
+    height: 100%;
+    background: $blanco-puro;
+    border: 4px solid $borde-negro;
+    border-radius: 15px;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: $borde-negro;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.15s ease;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+
+    &:hover {
+        background-color: $hover-color;
+        transform: translateY(-3px);
+        box-shadow: 0px 4px 0px $borde-negro;
+    }
+
+    &:active {
+        transform: translateY(0px);
+        box-shadow: none;
+    }
+}
+
+.btn-clear {
+    background-color: $rosa-claro;
+
+    &:hover {
+        background-color: lighten($rosa-claro, 5%);
+    }
+}
+
+.btn-equal {
+    background-color: $rosa-fuerte;
+    color: white;
+
+    &:hover {
+        background-color: darken($rosa-fuerte, 5%);
+    }
+}
+
+.btn-plus {
+    grid-row: span 2; 
+    background-color: $rosa-fuerte;
+    color: white;
+    height: 100%;
+
+    &:hover {
+        background-color: darken($rosa-fuerte, 5%);
+    }
+}
+
+.operator {
+    background-color: #f8ad9d;
+
+    &:hover {
+        background-color: #fbc4ab;
+    }
+}

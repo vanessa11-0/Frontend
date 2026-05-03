@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="display">{{ resultado }}</div>
+
+    <button (click)="presionarNumero('7')">7</button>
+    <button (click)="presionarNumero('8')">8</button>
+    <button (click)="presionarNumero('9')">9</button>
+    <button (click)="presionarOperacion('/')">/</button>
+
+    <button (click)="presionarNumero('4')">4</button>
+    <button (click)="presionarNumero('5')">5</button>
+    <button (click)="presionarNumero('6')">6</button>
+    <button (click)="presionarOperacion('*')">x</button>
+
+    <button (click)="presionarNumero('1')">1</button>
+    <button (click)="presionarNumero('2')">2</button>
+    <button (click)="presionarNumero('3')">3</button>
+    <button (click)="presionarOperacion('-')">-</button>
+
+    <button (click)="limpiar()" class="btn-clear">C</button>
+    <button (click)="presionarNumero('0')">0</button>
+    <button (click)="calcular()" class="btn-equal">=</button>
+    <button (click)="presionarOperacion('+')" class="btn-plus">+</button>
+  </div>
+</div>

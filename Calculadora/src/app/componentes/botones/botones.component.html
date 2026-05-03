@@ -1,0 +1,19 @@
+<button (click)="enviarNumero('7')">7</button>
+<button (click)="enviarNumero('8')">8</button>
+<button (click)="enviarNumero('9')">9</button>
+<button (click)="enviarOp('/')">/</button>
+
+<button (click)="enviarNumero('4')">4</button>
+<button (click)="enviarNumero('5')">5</button>
+<button (click)="enviarNumero('6')">6</button>
+<button (click)="enviarOp('*')">*</button>
+
+<button (click)="enviarNumero('1')">1</button>
+<button (click)="enviarNumero('2')">2</button>
+<button (click)="enviarNumero('3')">3</button>
+<button (click)="enviarOp('-')">-</button>
+
+<button (click)="clickLimpiar.emit()" class="btn-clear">C</button>
+<button (click)="enviarNumero('0')">0</button>
+<button (click)="clickResultado.emit()" class="btn-equal">=</button>
+<button (click)="enviarOp('+')">+</button>
