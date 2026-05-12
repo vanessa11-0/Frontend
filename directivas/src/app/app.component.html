@@ -1,0 +1,37 @@
+<div class="container">
+  <button 
+    class="main-button" 
+    [class.btn-loading]="estado() === 'Cargando'"
+    (click)="toggleData()">
+    {{ estado() === 'Exito' ? 'Eliminar Todo' : 'Descargar Datos' }}
+  </button>
+
+  <div class="content-area">
+    
+    @if (estado() === 'Pendiente') {
+      <p class="empty-state">La bandeja está vacía. Pulsa el botón superior.</p>
+    }
+
+    @if (estado() === 'Cargando') {
+      <div class="loader-box">
+        <div class="spinner"></div>
+        <p>Sincronizando información...</p>
+      </div>
+    }
+
+    @if (estado() === 'Exito') {
+      <div class="grid-container">
+        @for (item of elementos(); track item) {
+          <div class="item-card">
+            {{ item }}
+          </div>
+        }
+      </div>
+      
+      <div style="margin-top: 2rem; color: #059669; font-weight: bold;">
+        ✓ Operación completada
+      </div>
+    }
+
+  </div>
+</div>
