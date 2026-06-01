@@ -1,0 +1,30 @@
+<div class="card">
+
+  <div>
+
+    <h3 class="product-name">
+      {{ producto.nombre }}
+    </h3>
+
+    <p class="product-price">
+      Producto registrado
+    </p>
+
+  </div>
+
+  <div>
+
+    <div class="price-tag">
+      {{ producto.precio | currency:'COP':'symbol':'1.0-0' }}
+    </div>
+
+    <button
+      class="delete-btn"
+      (click)="eliminar()"
+    >
+      Eliminar
+    </button>
+
+  </div>
+
+</div>

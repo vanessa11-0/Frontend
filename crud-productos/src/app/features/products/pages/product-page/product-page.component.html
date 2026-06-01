@@ -1,0 +1,24 @@
+<div class="page-container">
+
+  <h1 class="page-title">
+    Gestión de Productos
+  </h1>
+
+  <div class="container-dashboard">
+
+    <div class="columna-izquierda">
+      <app-product-list
+        [productos]="listaProductos"
+        (onEliminar)="manejarEliminar($event)">
+      </app-product-list>
+    </div>
+
+    <div class="columna-right">
+      <app-product-form
+        (onProductoCreado)="manejarProductoCreado()">
+      </app-product-form>
+    </div>
+
+  </div>
+
+</div>

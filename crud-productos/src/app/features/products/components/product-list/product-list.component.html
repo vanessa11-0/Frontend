@@ -1,0 +1,31 @@
+<h2 class="list-title">Productos registrados</h2>
+
+<div *ngIf="productos.length > 0; else mensajeVacio" class="cards">
+
+  <app-product-card
+    *ngFor="let prod of productos; trackBy: trackById"
+    [producto]="prod"
+    (onEliminarCard)="retransmitirEliminar($event)">
+  </app-product-card>
+
+</div>
+
+<ng-template #mensajeVacio>
+
+  <div class="empty-state">
+
+    <div class="empty-icon">
+      📦
+    </div>
+
+    <h3>
+      No hay productos
+    </h3>
+
+    <p>
+      Agrega tu primer producto para comenzar
+    </p>
+
+  </div>
+
+</ng-template>

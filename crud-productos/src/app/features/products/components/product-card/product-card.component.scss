@@ -1,0 +1,67 @@
+.card {
+  background: rgb(253, 240, 240);
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+
+  border-color: #7c3aed;
+
+  box-shadow:
+    0 10px 25px rgba(124,58,237,.12);
+}
+
+.product-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.product-price {
+  color: #64748b;
+  margin-top: 5px;
+}
+
+.price-tag {
+  background: rgba(124,58,237,.1);
+
+  color: #7c3aed;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  width: 100%;
+
+  border: none;
+
+  background: transparent;
+
+  color: #ef4444;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #dc2626;
+}

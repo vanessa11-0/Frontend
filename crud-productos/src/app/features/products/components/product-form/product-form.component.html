@@ -1,0 +1,39 @@
+<div class="card-formulario">
+
+  <h2 class="form-title">
+    Nuevo Producto
+  </h2>
+
+  <div class="form-group">
+
+    <label>Nombre</label>
+
+    <input
+      type="text"
+      [(ngModel)]="nombre"
+      name="nombre"
+    >
+
+  </div>
+
+  <div class="form-group">
+
+    <label>Precio</label>
+
+    <input
+      type="number"
+      [(ngModel)]="precio"
+      name="precio"
+    >
+
+  </div>
+
+  <button
+    class="btn-create"
+    [disabled]="!esFormularioValido()"
+    (click)="registrar()"
+  >
+    Crear producto
+  </button>
+
+</div>
