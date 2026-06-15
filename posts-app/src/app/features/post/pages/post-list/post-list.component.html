@@ -1,0 +1,14 @@
+<div class="posts-container">
+    <h1 class="posts-container__title">Listado de Publicaciones</h1>
+
+    <app-spinner *ngIf="isLoading; else gridLayout"></app-spinner>
+
+    <ng-template #gridLayout>
+        <div class="posts-container__grid">
+            <app-post-card
+                *ngFor="let postElement of posts"
+                [post]="postElement">
+            </app-post-card>
+        </div>
+    </ng-template>
+</div>
